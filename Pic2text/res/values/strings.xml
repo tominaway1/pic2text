@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pic2text</string>
+    <string name="dummy_button">Choose From Library</string>
+    <string name="dummy_content">Convert Picture To Text</string>
+	<string name="TakePicture">TakePicture</string>
+	<string name= "Options">Options</string>
+	<string name="convert"> Convert </string>
+	<string name="yes"> I AM TAN </string>
+	<string name="camera">Camera</string>
+	</resources>
