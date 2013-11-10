@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    tools:context=".DisplayActivity" >
+
+    <!--
+         The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc.
+    -->
+
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true" >
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    		android:background="@drawable/blue"
+            android:orientation="vertical"
+            tools:ignore="UselessParent" >
+
+            <Button
+                android:id="@+id/Button02"
+                style="?buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:minHeight="120dp"
+                android:text="@string/email"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icons2" />
+
+            <Button
+                android:id="@+id/Button03"
+                style="?buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:minHeight="120dp"
+                android:text="@string/locat"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Button01"
+                style="?buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:minHeight="120dp"
+                android:text="@string/reminder"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

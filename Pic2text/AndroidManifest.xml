@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.example.pic2text"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+    
+    <uses-sdk android:minSdkVersion="8" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+ 
+    <permission
+        android:name="in.wptrafficanalyzer.locationroutedirectionmapv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+ 
+    <uses-permission android:name="com.sa.googlemaps.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    
+    <application android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        
+        
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDPEC_FSG4E9lUKf1lv-6GMf80W352uc30" />
+         <meta-data    
+        	android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDPEC_FSG4E9lUKf1lv-6GMf80W352uc30" />      
+ 		
+        
+        <activity android:name=".MainActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         
+        <activity
+            android:name=".OptionActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.tutorial.CLEARSCREEN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TakePicture"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="com.tutorial.TAKE_PICTURE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="abbyy.ocrsdk.android.ResultsActivity"
+            android:label="@string/title_activity_results" >
+            <intent-filter>
+                <action android:name="com.tutorial.RESULTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         
+        <activity
+            android:name=".ResultsActivity"
+            android:label="@string/title_activity_results" >
+            <intent-filter>
+                <action android:name="com.tutorial.RESULTS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 		 
+ 		<activity
+            android:name=".menuActivity"
+            android:label="@string/menu" >
+        </activity>
+        
+        <activity
+            android:name=".ParkingActivity"
+            android:label="@string/reminder" >
+            <intent-filter>
+                <action android:name="com.tutorial.PARKING" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+ 		
+        <activity
+            android:name=".EmailActivity"
+            android:label="@string/email" >
+            <intent-filter>
+                <action android:name="com.tutorial.EMAIL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        
+        </activity>
+        
+        <activity
+            android:name=".MainActivity1"
+            android:label="@string/locat" >
+            <intent-filter>
+                <action android:name="com.tutorial.LOCAT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
